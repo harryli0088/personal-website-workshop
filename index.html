@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- template made by Harry Li -->
+<html>
+<head>
+  <title>Your Name</title> <!-- EDIT THIS! -->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="search engine description here"> <!-- EDIT THIS! -->
+  <meta name="keywords" content="search engine keywords here"> <!-- EDIT THIS! -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <button id="scroll-top-button" onclick="topFunction()">
+    <img src="img/up-icon.svg" alt="^"/>
+  </button>
+
+  <div id="about">
+    <div id="aboutPicture">
+      <img src="img/pic.png" alt="Your Name"/> <!-- EDIT THIS! -->
+    </div>
+
+    <div id="aboutText">
+      <div id="aboutTextCenter" class="leftTransition">
+        <h1 id="name">Your Name</h1> <!-- EDIT THIS! -->
+
+        <div class="whiteDivider"></div>
+
+        <p>Your Description Here</p> <!-- EDIT THIS! -->
+        <p>Description continued</p> <!-- EDIT THIS! -->
+
+        <button onclick="window.open('/lib/resume.pdf','_blank');">Resume</button> <!-- EDIT THIS! -->
+
+        <div id="socialMedia">
+          <a class="iconLink" href="http://www.github.com/" target="_blank"> <!-- EDIT THIS! -->
+            <img src="img/github.svg"/>
+          </a>
+          <a class="iconLink" href="http://www.linkedin.com/" target="_blank"> <!-- EDIT THIS! -->
+            <img src="img/linkedin.svg"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="resume">
+    <div class="resumeSection">
+      <div class="resumeHeading">Education</div>
+      <div class="resumeSubHeading">Subtitle</div> <!-- EDIT THIS! -->
+
+      <div class="item">
+        <div>
+          <div class="itemTitle">Your School</div> <!-- EDIT THIS! -->
+          <div class="itemTime">Undergraduate | May 2019</div> <!-- EDIT THIS! -->
+        </div>
+        <div class="itemDescription">Your Major, BS</div> <!-- EDIT THIS! -->
+        <div class="itemDescription">Your Minor</div> <!-- EDIT THIS! -->
+        <div class="itemDescription">More Details Here</div> <!-- EDIT THIS! -->
+      </div>
+    </div>
+
+
+    <div class="resumeDivider"></div>
+
+
+    <div class="resumeSection">
+      <div class="resumeHeading">Work and Research</div>
+      <div class="resumeSubHeading">Subtitle</div> <!-- EDIT THIS! -->
+
+      <div class="item">
+        <div>
+          <div class="itemTitle">Work Experience 1</div> <!-- EDIT THIS! -->
+          <div class="itemTime">Position | Timeframe</div> <!-- EDIT THIS! -->
+        </div>
+        <div class="itemDescription">Description</div> <!-- EDIT THIS! -->
+        <div class="itemDescription">Description</div> <!-- EDIT THIS! -->
+      </div>
+
+      <div class="item">
+        <div>
+          <div class="itemTitle">Work Experience 2</div> <!-- EDIT THIS! -->
+          <div class="itemTime">Position | Timeframe</div> <!-- EDIT THIS! -->
+        </div>
+        <div class="itemDescription">Description</div> <!-- EDIT THIS! -->
+        <div class="itemDescription">Description</div> <!-- EDIT THIS! -->
+      </div>
+    </div>
+
+    <div class="resumeDivider"></div>
+
+    <div class="resumeSection">
+      <div class="resumeHeading">Projects</div>
+      <div class="resumeSubHeading">Subtitle</div> <!-- EDIT THIS! -->
+
+      <div class="two column grid">
+        <div class="column">
+          <a class="linkImage" href="your-link-here" target="_blank"> <!-- EDIT THIS! -->
+            <img class="leftTransition" src="img/pic.png" alt="pic"/> <!-- EDIT THIS! -->
+          </a>
+        </div>
+
+        <div class="column">
+          <div class="columnText rightTransition">
+            <div class="itemTitle">Project 1</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Description</div> <!-- EDIT THIS! -->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="two column grid reversed">
+        <div class="column">
+          <a class="linkImage" href="your-link-here" target="_blank"> <!-- EDIT THIS! -->
+            <img class="leftTransition" src="img/pic.png" alt="pic"/> <!-- EDIT THIS! -->
+          </a>
+        </div>
+
+        <div class="column">
+          <div class="columnText rightTransition">
+            <div class="itemTitle">Project 2</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Description</div> <!-- EDIT THIS! -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="resumeDivider"></div>
+
+
+    <div class="resumeSection">
+      <div class="resumeHeading">Skills</div>
+      <div class="resumeSubHeading">Subtitle</div> <!-- EDIT THIS! -->
+
+      <div class="three column grid">
+        <div class="column">
+          <div class="columnText rightTransition">
+            <div class="itemTitle">Proficient</div>
+            <div class="itemDescription">Skill</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Skill</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Skill</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Skill</div> <!-- EDIT THIS! -->
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="columnText rightTransition">
+            <div class="itemTitle">Familiar</div>
+            <div class="itemDescription">Skill</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Skill</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Skill</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Skill</div> <!-- EDIT THIS! -->
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="columnText rightTransition">
+            <div class="itemTitle">Operating Systems</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Linux</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Mac OSX</div> <!-- EDIT THIS! -->
+            <div class="itemDescription">Windows</div> <!-- EDIT THIS! -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="resumeDivider"></div>
+
+
+    <div id="hobbies" class="resumeSection">
+      <div class="resumeHeading">Hobbies</div>
+      <div class="resumeSubHeading">Subtitle</div> <!-- EDIT THIS! -->
+
+      <div class="two column grid reversed">
+        <div class="column">
+          <a class="linkImage" href="your-link-here" target="_blank"> <!-- EDIT THIS! -->
+            <img class="rightTransition" src="img/pic.png" alt="pic"/> <!-- EDIT THIS! -->
+          </a>
+        </div>
+
+        <div class="column">
+          <div class="columnText leftTransition">
+            <div class="itemTitle">Hobby 1</div> <!-- EDIT THIS! -->
+          </div>
+        </div>
+      </div>
+
+      <div class="two column grid">
+        <div class="column">
+          <a class="linkImage" href="your-link-here" target="_blank"> <!-- EDIT THIS! -->
+            <img class="leftTransition" src="img/pic.png" alt="pic"/> <!-- EDIT THIS! -->
+          </a>
+        </div>
+
+        <div class="column">
+          <div class="columnText rightTransition">
+            <div class="itemTitle">Hobby 2</div> <!-- EDIT THIS! -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="contact">
+    <div id="contactText" class="fadeIn">
+      <div id="contactHeading">Contact Me</div>
+      <p>Email: your@email.com</p>  <!-- EDIT THIS! -->
+    </div>
+  </div>
+
+  <div id="acknowledgements">
+    Media icons provided by <a href="https://fontawesome.com/" target="_blank">fontawesome.com</a>
+  </div>
+</body>
+</html>
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="lib/jquery.appear-master/jquery.appear.js"></script>
+<script src="lib/scroll.js"></script>
+<script src="main.js"></script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- template made by Harry Li -->
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+</head>
+<style>
+body {
+  display: flex;
+}
+#error {
+  color: white;
+  background: var(--dark-blue);
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+</style>
+<body>
+  <div id="error">
+    <h2>Oops! The page does not exist.</h2>
+    <h3>You can click the button to go home</h3>
+    <button onclick="window.open('/index.html','_self',false);">Home</button>
+  </div>
+</body>
+</html>

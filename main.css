@@ -1,0 +1,320 @@
+/* template made by Harry Li */
+:root {
+  --dark-blue: #34495E;
+  --dark-blue-hover: #5D6D7E;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+#scroll-top-button {
+  display: none;
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  z-index: 99;
+  background: #5D6D7E;
+  opacity: 0.8;
+  border: none;
+  height: 6vh;
+  width: 6vh;
+  outline:none;
+}
+#scroll-top-button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#scroll-top-button img {
+  width: 100%;
+}
+
+
+
+#about {
+  display: flex;
+}
+#aboutPicture {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  background: var(--dark-blue);
+}
+#aboutPicture img {
+  width: 100%;
+  display: block;
+}
+#aboutText {
+  width: 50%;
+  background: var(--dark-blue);
+  display: flex;
+  align-items: center;
+}
+#aboutTextCenter {
+  padding: 5vw;
+}
+@media screen and (max-width: 698px) {
+  #about {
+    flex-direction: column;
+  }
+  #aboutPicture {
+    width: 100%;
+  }
+  #aboutText {
+    width: 100%;
+  }
+  #aboutTextCenter {
+    position: relative;
+    transform: none;
+  }
+}
+
+#name {
+  color: white;
+}
+
+.whiteDivider {
+  width: 10vw;
+  border-bottom: 1px solid white;
+}
+
+#aboutText p{
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-bottom: 2em;
+}
+
+
+button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: 2px solid white;
+  color: white;
+  background: var(--dark-blue);
+  outline: none;
+  transition: .5s;
+}
+button:hover {
+  cursor: pointer;
+  background: var(--dark-blue-hover);
+}
+
+#socialMedia {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.iconLink {
+  margin-right: 1em;
+  text-decoration: none;
+}
+.iconLink img {
+  width: 30px;
+  transition: 1s;
+  opacity: 1;
+}
+.iconLink img:hover {
+  opacity: .7;
+}
+
+
+#resume {
+  padding-right: 10vw;
+  padding-left: 10vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+
+.resumeSection {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.resumeHeading {
+  font-weight: 300;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+
+  letter-spacing: 0px;
+}
+.resumeHeading.visible {
+  letter-spacing: 4px;
+}
+.resumeSubHeading {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+}
+
+
+.item {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  opacity: 0;
+}
+.item.visible {
+  opacity: 1;
+}
+
+.itemTitle {
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: inline;
+  font-size: 20px;
+}
+.itemTime {
+  float: right;
+  font-size: 18px;
+  font-weight: 300;
+}
+@media screen and (max-width: 550px) {
+  .itemTitle {
+    width: 100%;
+  }
+  .itemTime {
+    width: 100%;
+    padding-bottom: 3px;
+  }
+}
+.itemDescription {
+  font-style: italic;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 1em;
+  text-indent:-1em;
+}
+
+.resumeDivider {
+  width: 50%;
+  border-bottom: 1px solid black;
+  margin-left: 25%;
+
+  opacity: 0;
+}
+.resumeDivider.visible {
+  opacity: 1;
+}
+
+
+.grid {
+  display: flex;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+.grid.reversed {
+  flex-direction: row-reverse;
+}
+.grid .column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.two.column.grid .column {
+  width: 50%;
+}
+.three.column.grid .column {
+  width: 33.33%;
+}
+@media screen and (max-width: 698px) {
+  .grid,.grid.reversed {
+    flex-direction: column;
+  }
+  .grid .column {
+    justify-content: start;
+  }
+  .two.column.grid .column {
+    width: 100%;
+  }
+  .three.column.grid .column {
+    width: 100%;
+  }
+}
+.columnText {
+  padding: 1em;
+}
+@media screen and (max-width: 698px) {
+  .columnText {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+.linkImage img {
+  width: 100%;
+}
+a.linkImage {
+  opacity: 1;
+  transition: 1s;
+}
+a.linkImage:hover {
+  opacity: .7;
+}
+
+#hobbies {
+  padding-bottom: 0;
+}
+
+#contact {
+  background: var(--dark-blue);
+  color: white;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  text-align: center;
+}
+#contactText {
+  display: inline-block;
+}
+#contactHeading {
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+
+#acknowledgements {
+  background: #17202A;
+  padding: 1em;
+  text-align: center;
+  color: #ddd;
+  font-style: italic;
+  font-size: 12px;
+}
+#acknowledgements a {
+  color: #ddd;
+}
+
+
+
+.leftTransition {
+  opacity: 0;
+  margin-left: -10vw;
+}
+.leftTransition.visible {
+  opacity: 1;
+  margin-left: 0;
+}
+.rightTransition {
+  opacity: 0;
+  margin-right: -10vw;
+}
+.rightTransition.visible {
+  opacity: 1;
+  margin-right: 0;
+}
+
+.fadeIn {
+  opacity: 0;
+}
+.fadeIn.visible {
+  opacity: 1;
+}
