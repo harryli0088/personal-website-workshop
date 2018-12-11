@@ -21,6 +21,8 @@ body {
   height: 6vh;
   width: 6vh;
   outline:none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #scroll-top-button:hover {
   cursor: pointer;
