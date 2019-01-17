@@ -13,9 +13,9 @@ Step-by-step instructions with pictures to host your website on AWS can be found
 &nbsp;&nbsp;  "Statement":[{  
 &nbsp;&nbsp;&nbsp;&nbsp;	"Sid":"PublicReadGetObject",  
 &nbsp;&nbsp;&nbsp;&nbsp;        "Effect":"Allow",  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	  "Principal": " * ",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	  "Principal": "*",  
 &nbsp;&nbsp;&nbsp;&nbsp;      "Action":["s3:GetObject"],  
-&nbsp;&nbsp;&nbsp;&nbsp;      "Resource":["arn:aws:s3:::example.com/ * "]  
+&nbsp;&nbsp;&nbsp;&nbsp;      "Resource":["arn:aws:s3:::example.com/*"]  
 &nbsp;&nbsp;    }]  
 }
 
