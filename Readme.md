@@ -9,7 +9,7 @@ Step-by-step instructions with pictures to host your website on AWS can be found
 
 ## Bucket Policy
 {  
-  "Version":"2012-10-17",  
+&nbsp;  "Version":"2012-10-17",  
   "Statement":[{  
 	"Sid":"PublicReadGetObject",  
         "Effect":"Allow",  
