@@ -8,18 +8,18 @@ Check out this example template site [tiny.cc/pw-example](https://tiny.cc/pw-exa
 Step-by-step instructions with pictures to host your website on AWS can be found [tiny.cc/pw-steps](https://docs.google.com/document/d/1o64vjfZwpKMjpTm9GaTauZhlDqMVSAERpGxY7_dhZ70/edit?usp=sharing)
 
 ## Bucket Policy
+```
 {  
   "Version":"2012-10-17",  
   "Statement":[{  
-	"Sid":"PublicReadGetObject",  
-        "Effect":"Allow",  
-	  "Principal": "*",  
-      "Action":["s3:GetObject"],  
-      "Resource":["arn:aws:s3:::example.com/*"  
-      ]  
-    }  
-  ]  
+    "Sid":"PublicReadGetObject",  
+    "Effect":"Allow",  
+      "Principal": "*",  
+    "Action":["s3:GetObject"],  
+    "Resource":["arn:aws:s3:::example.com/*"]  
+  }]  
 }
+```
 
 
 ## License
