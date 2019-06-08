@@ -18,17 +18,18 @@ body {
   background: #5D6D7E;
   opacity: 0.8;
   border: none;
-  height: 6vh;
-  width: 6vh;
+  height: 2em;
+  width: 2em;
   outline:none;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0.5em;
+  color: white;
 }
 #scroll-top-button:hover {
   cursor: pointer;
   opacity: 1;
 }
 #scroll-top-button img {
+  margin-top: -0.3em;
   width: 100%;
 }
 
