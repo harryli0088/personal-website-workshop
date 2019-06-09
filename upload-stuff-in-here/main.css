@@ -77,7 +77,7 @@ body {
   color: white;
 }
 
-.whiteDivider {
+#whiteDivider {
   width: 10vw;
   border-bottom: 1px solid white;
 }
