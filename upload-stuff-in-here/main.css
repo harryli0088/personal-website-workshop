@@ -205,39 +205,6 @@ button:hover {
 }
 
 
-.grid {
-  display: flex;
-  padding-top: 4vw;
-  padding-bottom: 4vw;
-}
-.grid.reversed {
-  flex-direction: row-reverse;
-}
-.grid .column {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.two.column.grid .column {
-  width: 50%;
-}
-.three.column.grid .column {
-  width: 33.33%;
-}
-@media screen and (max-width: 698px) {
-  .grid,.grid.reversed {
-    flex-direction: column;
-  }
-  .grid .column {
-    justify-content: start;
-  }
-  .two.column.grid .column {
-    width: 100%;
-  }
-  .three.column.grid .column {
-    width: 100%;
-  }
-}
 .columnText {
   padding: 1em;
 }
