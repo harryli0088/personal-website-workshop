@@ -218,6 +218,11 @@ button:hover {
     padding-right: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .order-md-1 .columnText {
+    align-items: flex-end;
+  }
+}
 
 
 .linkImage img {
@@ -272,10 +277,12 @@ a.linkImage:hover {
 .leftTransition {
   opacity: 0;
   margin-left: -10vw;
+  margin-right: 10vw;
 }
 .leftTransition.visible {
   opacity: 1;
   margin-left: 0;
+  margin-right: 0;
 }
 .rightTransition {
   opacity: 0;
