@@ -16,3 +16,7 @@ function showHideScrollButtom() {
 function topFunction() {
   $('html,body').animate( {scrollTop: 0}, 'slow' );
 }
+
+$(document).ready(function() {
+  $("#scroll-top-button").click(topFunction); //add a click listener to the scroll button
+})
